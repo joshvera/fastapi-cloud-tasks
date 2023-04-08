@@ -80,7 +80,6 @@ class Requester:
 
         # Make query dict and update our with our params
         query = dict(parse_qsl(url_parts[4]))
-        query.update(params)
 
         # override query params
         url_parts[4] = urlencode(query)
